@@ -1,16 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Hi</title>
-    <style>
-        body {
-            background: linear-gradient(deepskyblue, whitesmoke) fixed no-repeat;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทำความรู้จักกับ ฟิชฟิงเกอร์ เมนูสุดกรอบระดับตำนาน</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>Welcome</h1>
- <mark>Hi</mark>
+
+    <header>
+        <div class="logo">🐟 ฟิชฟิงเกอร์กรอบทอง</div>
+        <nav>
+            <a href="#about">รู้จักเรา</a>
+            <a href="#anatomy">โครงสร้างความอร่อย</a>
+            <a href="#cook">เคล็ดลับฟิน</a>
+            <a href="#counter">เครื่องวัดความกรุบ</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>ทำความรู้จัก "ฟิชฟิงเกอร์"</h1>
+            <p>เมนูโปรดเยียวยาจิตใจยามดึก ตอบโจทย์วันเร่งรีบของครอบครัว และคนรักแซนด์วิชมาตั้งแต่ปี 1955</p>
+            <a href="#counter" class="cta-btn">จัดสักจานเลย!</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <h2>ฟิชฟิงเกอร์ คืออะไร ทำไมใคร ๆ ก็หลงรัก?</h2>
+            <p>ถ้าจะให้คำนิยาม ฟิชฟิงเกอร์คือ 3 ความลงตัวที่สมบูรณ์แบบ: เนื้อปลาสีขาวนุ่มละมุนด้านใน, เกราะเกล็ดขนมปังกรอบสีทองที่ปรุงรสมาอย่างดี และความสามารถพิเศษสุดมหัศจรรย์ในการเปลี่ยนขนมปังทาเนยธรรมดา ๆ ให้กลายเป็นแซนด์วิชสุดเทพที่ใครก็ปฏิเสธไม่ลง!</p>
+        </section>
+
+        <!-- Anatomy Section -->
+        <section id="anatomy" class="grid-section container">
+            <div class="card">
+                <h3>1. เกราะความกรอบ</h3>
+                <p>ถูกออกแบบมาเพื่อความกรอบขั้นสุด ไม่ว่าจะเอาไปอบหรือทอด ก็ต้องได้สีเหลืองทองที่เป็นเอกลักษณ์และเสียง "กรุบ" ทุกคำที่กัด</p>
+            </div>
+            <div class="card">
+                <h3>2. เนื้อปลาเน้น ๆ</h3>
+                <p>มักทำจากเนื้อปลาสีขาวรสละมุน เช่น ปลาคอด (Cod) หรือปลาพอลล็อค (Pollock) เนื้อสัมผัสเนียนนุ่ม ซ่อนตัวอย่างปลอดภัยอยู่ภายใต้เสื้อคลุมสุดกรอบ</p>
+            </div>
+            <div class="card">
+                <h3>3. ซอสคู่หู</h3>
+                <p>ทาร์ทาร์ซอสคือความคลาสสิกตามธรรมเนียม แต่ซอสมะเขือเทศคือความอร่อยแหวกแนวสายสตรีทที่พวกเราแอบเทใจให้แบบลับ ๆ</p>
+            </div>
+        </section>
+
+        <!-- Interactive JS Section -->
+        <section id="counter" class="interactive-section">
+            <h2>เครื่องวัดระดับความกรุบ (Crunch-O-Meter)</h2>
+            <p>คุณคิดว่าจะฟาดฟิชฟิงเกอร์ไปได้กี่ชิ้นในมื้อนี้?</p>
+            <div class="counter-box">
+                <span id="finger-count">0</span>
+                <p id="funny-rating">คุณยังไม่ได้เปิดเตาอบเลยด้วยซ้ำนะ...</p>
+                <button id="serve-btn">หม่ำฟิชฟิงเกอร์เลย! 🍴</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 สร้างสรรค์ด้วยความรัก ความคิดถึงวัยเด็ก และทาร์ทาร์ซอสแบบฉ่ำ ๆ</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
