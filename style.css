@@ -1,0 +1,182 @@
+/* รีเซ็ตสไตล์และกำหนดฟอนต์ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.8;
+}
+
+/* ส่วนหัวและแถบเมนู */
+header {
+    background-color: #0f172a;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fbbf24;
+}
+
+/* ส่วนฮีโร่หน้าแรก */
+.hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), 
+                url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 8rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fbbf24;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #94a3b8;
+}
+
+.cta-btn {
+    background-color: #d97706;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #b45309;
+    transform: translateY(-2px);
+}
+
+/* การจัดเลย์เอาต์เนื้อหาหลัก */
+.container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.25rem;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    font-size: 1.15rem;
+    color: #475569;
+}
+
+/* ส่วนการ์ดสามช่อง */
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-top: 5px solid #fbbf24;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+}
+
+/* ส่วนลูกเล่นนับจำนวน */
+.interactive-section {
+    background-color: #e0f2fe;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.counter-box {
+    background: white;
+    max-width: 400px;
+    margin: 2rem auto 0;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+#finger-count {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #d97706;
+    display: block;
+}
+
+#funny-rating {
+    font-style: italic;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    min-height: 3rem;
+}
+
+#serve-btn {
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#serve-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* ส่วนท้ายเว็บ */
+footer {
+    background-color: #0f172a;
+    color: #64748b;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
