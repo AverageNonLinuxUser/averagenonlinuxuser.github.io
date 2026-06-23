@@ -1,3 +1,5 @@
+// ผมชื่อ กวิน ฟุคุนิชิ
+// Gavin Fukunishi
 // ดึง element จาก DOM
 const serveBtn = document.getElementById('serve-btn');
 const countDisplay = document.getElementById('finger-count');
